@@ -2,7 +2,25 @@
   text-align: center;
 }
 
-.App-logo {
+body {
+  margin: 100px;
+}
+
+.menu {
+  text-align: left;
+  padding-right: 100px;
+  margin-right:100px;
+}
+
+.menu a:hover {
+  text-shadow: 3px 3px 4px;
+  text-indent: 30px;
+}
+
+#title {
+  margin: -4%
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +53,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

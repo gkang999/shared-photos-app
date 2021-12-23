@@ -1,0 +1,78 @@
+.Albums {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.album {
+    position:fixed;
+    text-align: left;
+    top: 200px;
+    left: 525px;
+    height: 510px;
+    width: 880px;
+    overflow: auto;
+    animation: fadeInDown ease 1s;
+}
+
+.view {
+    transform: translate(5%,2.5%);
+    animation: fadeInDown ease 1s;
+}
+
+#newAlbum {
+    position: fixed;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15.4px;
+    border: none;
+    background: none;
+    top: 155px;
+    left: 1225px;
+    animation: fadeInDown ease 1s;
+}
+
+#newAlbum:hover {
+    cursor:pointer;
+    color:rgb(106, 146, 184);
+}
+
+#albumMenu {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15.4px;
+    position: fixed;
+    top: 155px;
+    left: 507px;
+    border: none;
+    outline: 0;
+    background-color: #FAFDFF;
+}
+
+#albumMenu:hover {
+    cursor:pointer;
+}
+
+#border {
+    position: fixed;
+    border: 1px solid rgb(173, 197, 218);
+    border-radius: 5px;
+    height: 540px;
+    width: 900px;
+    top: 170px;
+    left: 465px;
+}
+
+.albumBorder {
+    border: 1px solid rgb(203, 224, 241);
+    background: rgb(173, 197, 218);
+    border-radius: 5px;
+    height: 20%;
+    width: auto;
+}
+
+.albumBorder:hover {
+    cursor: pointer;
+    background: #f2f9fd;
+    border: 1px solid rgb(173, 197, 218);
+}
+
+.albumEntry {
+    padding-top: 5%;
+}
