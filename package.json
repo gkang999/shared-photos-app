@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.4",
     "create-react-class": "^15.7.0",
+    "firebase": "^9.6.2",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-axios": "^2.0.5",
@@ -39,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://sharedphotos-8df87.firebaseapp.com/"
 }

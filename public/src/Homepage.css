@@ -1,0 +1,27 @@
+.Homepage {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    transform: translate(0%, 400%);
+}
+
+#homepageImg {
+    position: fixed;
+    top: 14%;
+    left: 25.5%;
+    height: 700px;
+    width: auto;
+    opacity: 85%;
+    animation: fadeInDown ease 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(auto);
+    }
+}

@@ -1,0 +1,67 @@
+.About {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    top: 15%;
+    left: 27%;
+    position: fixed;
+}
+
+.cursor {
+    color: #FAFDFF;
+}
+
+.firebase {
+    position:fixed;
+    top:72%;
+    left:39%;
+}
+
+.heroku {
+    position:fixed;
+    top:72%;
+    left:46.25%;
+}
+
+.media {
+    position:fixed;
+    top:70%;
+    left:56%;
+}
+
+.sql {
+    position:fixed;
+    top:74%;
+    left:56%;
+}
+
+#welcome {
+    text-align: left;
+    font-size: 40px;
+    animation: fadeInDown ease 1s;
+}
+
+#aboutMe {
+    transform: translate(10%,5%);
+    width: 780px;
+    height:500px;
+    text-align: left;
+    line-height: 1.5;
+    animation: fadeInDown ease 1s;
+}
+
+/* #diagram {
+    width: 370px;
+    height: auto;
+    transform: translate(140%,-140%);
+} */
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(auto);
+    }
+}
