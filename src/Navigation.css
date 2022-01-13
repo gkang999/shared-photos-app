@@ -83,10 +83,12 @@ body {
 }
 
 .login {
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
 
 .register {
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
 
@@ -94,6 +96,31 @@ body {
     position: fixed;
     top:16%;
     left:15%;
+}
+
+.primary {
+    background: rgb(216, 236, 255);
+    border: 1px solid #245779;
+    border-radius: .3rem;
+    color: #245779;
+    padding: 2px 5px 2px 5px;
+}
+
+.primary:hover {
+    cursor: pointer;
+    background-color: rgb(116, 159, 199);
+    color: #FAFDFF;
+    border: 1px solid #245779;
+}
+
+.secondary {
+    border: none;
+    background: none;
+}
+
+.secondary:hover {
+    cursor: pointer;
+    color: blue;
 }
 
 .button {

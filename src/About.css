@@ -24,14 +24,14 @@
 
 .media {
     position:fixed;
-    top:70%;
+    top:69%;
     left:56%;
 }
 
 .sql {
     position:fixed;
-    top:74%;
-    left:56%;
+    top:75%;
+    left:56.5%;
 }
 
 #welcome {
@@ -49,11 +49,20 @@
     animation: fadeInDown ease 1s;
 }
 
-/* #diagram {
-    width: 370px;
-    height: auto;
-    transform: translate(140%,-140%);
-} */
+#verticalLine:before,
+#verticalLine:after {
+    content: "";
+    width: 1px; /* color white ("no color") color (each 2px wide); here you can adjust the width */
+    height: 0;
+    background: rgb(137, 174, 209); /* here you can adjust the spacing */
+    position: absolute; /* needs to be absolute */
+    top: 10%;
+    left: 5%;
+    animation: linedown 1s forwards;
+}
+
+@keyframes linedown {100% {height: 50%}}
+
 
 @keyframes fadeInDown {
     0% {

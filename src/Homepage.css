@@ -2,16 +2,80 @@
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
-    transform: translate(0%, 400%);
 }
 
-#homepageImg {
+#title {
     position: fixed;
-    top: 14%;
-    left: 25.5%;
-    height: 700px;
-    width: auto;
-    opacity: 85%;
+    top: 26%;
+    left: 40%;
+    text-align: left;
+    font-size: 50px;
+    animation: fadeInDown ease 1s;
+}
+
+.verticalLine:before,
+.verticalLine:after {
+    content: "";
+    width: 1px; /* color white ("no color") color (each 2px wide); here you can adjust the width */
+    height: 0;
+    background: rgb(137, 174, 209); /* here you can adjust the spacing */
+    position: absolute; /* needs to be absolute */
+    top: 25%;
+    left: 46%;
+    animation: linedown 2s forwards;
+}
+
+@keyframes linedown {100% {height: 40%}}
+
+.list1 {
+    top: 32%;
+    left: 43%;
+    position: fixed;
+    text-align: left;
+    font-size: 17px;
+    transform: translate(10%,5%);
+    width: 780px;
+    height:500px;
+    text-align: left;
+    animation: fadeInDown ease 1s;
+}
+
+.list2 {
+    top: 38%;
+    left: 43%;
+    position: fixed;
+    text-align: left;
+    font-size: 17px;
+    transform: translate(10%,5%);
+    width: 780px;
+    height:500px;
+    text-align: left;
+    animation: fadeInDown ease 1s;
+}
+
+.list3 {
+    top: 44%;
+    left: 43%;
+    position: fixed;
+    text-align: left;
+    font-size: 17px;
+    transform: translate(10%,5%);
+    width: 780px;
+    height:500px;
+    text-align: left;
+    animation: fadeInDown ease 1s;
+}
+
+.list4 {
+    top: 50%;
+    left: 43%;
+    position: fixed;
+    text-align: left;
+    font-size: 17px;
+    transform: translate(10%,5%);
+    width: 780px;
+    height:500px;
+    text-align: left;
     animation: fadeInDown ease 1s;
 }
 

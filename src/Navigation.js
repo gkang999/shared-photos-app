@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
-const API_URL = "https://shared-photos.herokuapp.com/accounts/";
+const API_URL = "http://localhost:3308/accounts/";
 
 function Navigation() {
     return(
@@ -150,31 +150,31 @@ function NavigationPage() {
             </div> : null}
             <Modal show={loginView} onHide={handleLoginView} animation={false} backdropClassName="backdrop" centered dialogClassName="loginModal">
                 <form className="login" onSubmit={handleLoginSubmit}>
-                    <div className="login">login</div><br/>
+                    <br/><div className="login"><b>login</b></div><br/>
                     <LoginFail trigger={loginFail}/>
                     <label id="user" htmlFor="username">username</label><br/>
-                    <input type="text" name="username" onChange={e => setUsername(e.target.value)} required/><br/>
+                    <input type="text" name="username" onChange={e => setUsername(e.target.value)} required/><br/><br/>
                     <label id="pass" htmlFor="password">password</label><br/>
-                    <input type="password" name="password" onChange={e => setPassword(e.target.value)} required/><br/>
+                    <input type="password" name="password" onChange={e => setPassword(e.target.value)} required/><br/><br/>
 
-                    <input type="submit" value="login"/>
+                    <input className="primary" type="submit" value="login"/>&nbsp;&nbsp;
                     <Button className="secondary" show={loginView} onClick={handleBothView}>register</Button>
                 </form>
             </Modal>
 
             <Modal show={regView} onHide={handleRegView} animation={false} backdropClassName="backdrop" centered dialogClassName="regModal">
                 <form className="register" onSubmit={handleRegSubmit}>
-                    <div className="register">register</div><br/>
+                    <br/><div className="register"><b>register</b></div><br/>
                     <label id="user" htmlFor="username">username</label><br/>
-                    <input type="text" name="username" onChange={e => setUsername(e.target.value)} required/><br/>
+                    <input type="text" name="username" onChange={e => setUsername(e.target.value)} required/><br/><br/>
                     <label id="pass" htmlFor="password">password</label><br/>
-                    <input type="password" name="password" onChange={e => setPassword(e.target.value)} required/><br/>
+                    <input type="password" name="password" onChange={e => setPassword(e.target.value)} required/><br/><br/>
                     <label id="name" htmlFor="name">name</label><br/>
-                    <input type="text" name="name" onChange={e => setName(e.target.value)} required/><br/>
+                    <input type="text" name="name" onChange={e => setName(e.target.value)} required/><br/><br/>
                     <label id="email" htmlFor="email">email</label><br/>
-                    <input type="text" name="email" onChange={e => setEmail(e.target.value)}/><br/>
+                    <input type="text" name="email" onChange={e => setEmail(e.target.value)}/><br/><br/>
 
-                    <input type="submit" value="register"/>
+                    <input className="primary" type="submit" value="register"/>&nbsp;&nbsp;
                     <Button className="secondary" show={regView} onClick={handleBothView}>back to login</Button>
                 </form>
             </Modal>

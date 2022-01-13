@@ -64,23 +64,25 @@
 }
 
 .uploadImage {
+    font-family: 'Courier New', Courier, monospace;
     position: relative;
     top: 10px;
     left: 15px;
 }
 
 #imageSubmit {
-    background: none;
-    border: 1px solid;
+    background: rgb(216, 236, 255);
+    border: 1px solid #245779;
     border-radius: .3rem;
-    padding: 5px;
+    color: #245779;
+    padding: 2px 5px 2px 5px;
 }
 
 #imageSubmit:hover {
     cursor: pointer;
-    background-color: rgb(106, 146, 184);
+    background-color: rgb(116, 159, 199);
     color: #FAFDFF;
-    border: 1px solid #FAFDFF;
+    border: 1px solid #245779;
 }
 
 .createAlbumModal {
@@ -101,23 +103,25 @@
 }
 
 .createAlbum {
+    font-family: 'Courier New', Courier, monospace;
     position: relative;
     top: 10px;
     left: 15px;
 }
 
 #albumSubmit {
-    background: none;
-    border: 1px solid;
+    background: rgb(216, 236, 255);
+    border: 1px solid #245779;
     border-radius: .3rem;
-    padding: 5px;
+    color: #245779;
+    padding: 2px 5px 2px 5px;
 }
 
 #albumSubmit:hover {
     cursor: pointer;
-    background-color: rgb(106, 146, 184);
+    background-color: rgb(116, 159, 199);
     color: #FAFDFF;
-    border: 1px solid #FAFDFF;
+    border: 1px solid #245779;
 }
 
 .images {
@@ -130,6 +134,7 @@
 }
 
 #albumInImage {
+    font-family: 'Courier New', Courier, monospace;
     position: relative;
     top: 5px;
     left: 20px;

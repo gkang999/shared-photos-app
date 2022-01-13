@@ -5,10 +5,10 @@ import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
 import './Albums.css';
 
-const PUBLIC_IMAGE_URL = "https://shared-photos.herokuapp.com/public/images/"
-const PUBLIC_ALBUM_URL = "https://shared-photos.herokuapp.com/public/albums/"
-const ALBUM_URL = "https://shared-photos.herokuapp.com/albums/"
-const IMAGE_URL = "https://shared-photos.herokuapp.com/images/"
+const PUBLIC_IMAGE_URL = "http://localhost:3308/public/images/"
+const PUBLIC_ALBUM_URL = "http://localhost:3308/public/albums/"
+const ALBUM_URL = "http://localhost:3308/albums/"
+const IMAGE_URL = "http://localhost:3308/images/"
 
 function LoggedInCheck() {
   if (localStorage.getItem('currentAccount') != null && localStorage.getItem('SPDKSessionKey') != null) {
@@ -386,14 +386,14 @@ function Albums() {
         </div>
       </div>
       <Modal show={imageView} onHide={handleCloseImage} animation={false} backdropClassName="backdrop" dialogClassName="imageModal">
-        <div id="albumInImage">{albumName} Album</div>
+        <div id="albumInImage"><b>{albumName} Album</b></div>
         <div className="images">
           {displayImages()}
         </div>
       </Modal>
       <Modal show={imageUpload} onHide={handleCloseUpload} animation={false} backdropClassName="backdrop" dialogClassName="uploadImageModal">
         <form className="uploadImage" onSubmit={uploadImage}>
-          <input type="file" onChange={handleImageChange}/><br/>
+          <input className="Albums" type="file" onChange={handleImageChange}/><br/><br/>
           <label htmlFor="newImage">New image name:</label><br/>
           <input type="text" name="newImage" onChange={e => setImageName(e.target.value)}/><br/><br/>
           <input id="imageSubmit" type="submit" value="Upload"/>
