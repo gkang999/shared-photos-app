@@ -371,8 +371,8 @@ function Albums() {
     return (
       myImages.map(image => 
       <div className="Albums" key={image.pictureName}>
-          {image.pictureName} - 
-          <Button id="deleteImage" value={image.pictureName} onClick={e => deleteImage(e.target.value)}>delete</Button><br/>
+        {value === "my" ? <div>{image.pictureName} - <Button id="deleteImage" value={image.pictureName} 
+                                  onClick={e => deleteImage(e.target.value)}>delete</Button></div> : image.pictureName}<br/>
           <img key={image.pictureName} alt={image.pictureName} src={`data:image/${image.pictureExtension};base64,${image.base64Encoding}`}/>
       </div>)
     );
