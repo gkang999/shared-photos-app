@@ -8,6 +8,7 @@ import About from './About.js';
 function App() {
   return (
       <div className="App">
+        <title>sharedphotos</title>
         <Router>
           <Navigation/>
           <Switch>
