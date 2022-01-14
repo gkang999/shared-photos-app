@@ -52,8 +52,6 @@ function About() {
 
           .pauseFor(400)
           .typeString("media service API<br/>")
-          .changeDelay(20)
-          .typeString("(heroku)")
           .start();
         }}
         />

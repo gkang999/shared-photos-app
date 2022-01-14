@@ -28,53 +28,41 @@
 @keyframes linedown {100% {height: 40%}}
 
 .list1 {
-    top: 32%;
-    left: 43%;
+    top: 37%;
+    left: 48%;
     position: fixed;
     text-align: left;
     font-size: 17px;
-    transform: translate(10%,5%);
-    width: 780px;
-    height:500px;
     text-align: left;
     animation: fadeInDown ease 1s;
 }
 
 .list2 {
-    top: 38%;
-    left: 43%;
+    top: 43%;
+    left: 48%;
     position: fixed;
     text-align: left;
     font-size: 17px;
-    transform: translate(10%,5%);
-    width: 780px;
-    height:500px;
     text-align: left;
     animation: fadeInDown ease 1s;
 }
 
 .list3 {
-    top: 44%;
-    left: 43%;
+    top: 49%;
+    left: 48%;
     position: fixed;
     text-align: left;
     font-size: 17px;
-    transform: translate(10%,5%);
-    width: 780px;
-    height:500px;
     text-align: left;
     animation: fadeInDown ease 1s;
 }
 
 .list4 {
-    top: 50%;
-    left: 43%;
+    top: 55%;
+    left: 48%;
     position: fixed;
     text-align: left;
     font-size: 17px;
-    transform: translate(10%,5%);
-    width: 780px;
-    height:500px;
     text-align: left;
     animation: fadeInDown ease 1s;
 }
