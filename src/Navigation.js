@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
-const API_URL = "http://localhost:3308/accounts/";
+const API_URL = "https://shared-photos.herokuapp.com/accounts/";
 
 function Navigation() {
     return(

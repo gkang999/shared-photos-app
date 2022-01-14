@@ -5,10 +5,10 @@ import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
 import './Albums.css';
 
-const PUBLIC_IMAGE_URL = "http://localhost:3308/public/images/"
-const PUBLIC_ALBUM_URL = "http://localhost:3308/public/albums/"
-const ALBUM_URL = "http://localhost:3308/albums/"
-const IMAGE_URL = "http://localhost:3308/images/"
+const PUBLIC_IMAGE_URL = "https://shared-photos.herokuapp.com/public/images/"
+const PUBLIC_ALBUM_URL = "https://shared-photos.herokuapp.com/public/albums/"
+const ALBUM_URL = "https://shared-photos.herokuapp.com/albums/"
+const IMAGE_URL = "https://shared-photos.herokuapp.com/images/"
 
 function LoggedInCheck() {
   if (localStorage.getItem('currentAccount') != null && localStorage.getItem('SPDKSessionKey') != null) {
@@ -18,6 +18,7 @@ function LoggedInCheck() {
 }
 
 function Albums() {
+  const [isLoading, setIsLoading] = useState(false);
   const [publicStatus, setPublicStatus] = useState('private');
   const [publicView, setPublicView] = useState(true);
   const [myView, setMyView] = useState(false);
@@ -226,6 +227,10 @@ function Albums() {
   }
 
   useEffect(() => {
+    setMyImages([]);
+  }, [imageView])
+  
+  useEffect(() => {
     const loadPublicImages = () => {
       const reqBody = JSON.stringify({
         accountName: albumOwner,
@@ -316,7 +321,7 @@ function Albums() {
   const displayPublicAlbums = () => {
     if (publicAlbums.length === 0) {
       return (
-        <div>click 'create new album' to add an album</div>
+        <div>no public albums! login to add your own</div>
       );
     }
     return (
@@ -333,7 +338,7 @@ function Albums() {
   const displayMyAlbums = () => {
     if (localStorage.getItem('currentAccount') == null && localStorage.getItem('SPDKSessionKey') == null) {
       return (
-        <div>login to view your albums</div>
+        <div>login to view and add your own albums</div>
       );
     }
     else if (myAlbums.length === 0) {
@@ -366,9 +371,9 @@ function Albums() {
     return (
       myImages.map(image => 
       <div className="Albums" key={image.pictureName}>
-        {image.pictureName} - 
-        <Button id="deleteImage" value={image.pictureName} onClick={e => deleteImage(e.target.value)}>delete</Button><br/>
-        <img key={image.pictureName} alt={image.pictureName} src={`data:image/${image.pictureExtension};base64,${image.base64Encoding}`}/>
+          {image.pictureName} - 
+          <Button id="deleteImage" value={image.pictureName} onClick={e => deleteImage(e.target.value)}>delete</Button><br/>
+          <img key={image.pictureName} alt={image.pictureName} src={`data:image/${image.pictureExtension};base64,${image.base64Encoding}`}/>
       </div>)
     );
   }
